@@ -11,7 +11,7 @@ class Solution:
         for r in range(len(prices)):
             if prices[r] < prices[l]:
                 l = r
-            elif prices[r] - prices[l] > maxprof:
+            if prices[r] - prices[l] > maxprof:
                 maxprof = prices[r] - prices[l]
         return maxprof
 
